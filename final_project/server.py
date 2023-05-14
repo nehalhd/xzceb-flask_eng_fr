@@ -4,6 +4,9 @@ import json
 import machinetranslation 
 from translator import english_to_french, french_to_english
 
+import sys
+sys.path.append('/path/to/translator')
+
 app = Flask("Web Translator")
 
 @app.route("/englishToFrench", methods=['POST'])
