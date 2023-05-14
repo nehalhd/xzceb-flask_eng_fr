@@ -11,7 +11,7 @@ app = Flask("Web Translator")
 
 @app.route("/englishToFrench", methods=['POST'])
 def englishToFrench():
-    english_text = request.args.get('english_text')
+    english_text = request.form.get('english_text')
     # Write your code here
     french_text = english_to_french(english_text)
 
@@ -19,7 +19,7 @@ def englishToFrench():
 
 @app.route("/frenchToEnglish", methods=['POST'])
 def frenchToEnglish():
-    french_text = request.args.get('french_text')
+    french_text = request.form.get('french_text')
     # Write your code here
     english_text = french_to_english(french_text)
 
