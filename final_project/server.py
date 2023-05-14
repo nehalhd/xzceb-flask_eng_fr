@@ -5,8 +5,8 @@ import json
 
 from translator import english_to_french, french_to_english
 
-# 
-
+import sys
+sys.path.append('../machinetranslation/translator')
 
 app = Flask("Web Translator")
 
