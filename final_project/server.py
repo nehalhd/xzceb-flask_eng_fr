@@ -1,11 +1,12 @@
+import machinetranslation 
 from machinetranslation import translator
 from flask import Flask, render_template, request
 import json
-import machinetranslation 
-# import english_to_french, french_to_englishqc
 
-import sys
-sys.path.append('../machinetranslation/translator')
+from translator import english_to_french, french_to_english
+
+# 
+
 
 app = Flask("Web Translator")
 
